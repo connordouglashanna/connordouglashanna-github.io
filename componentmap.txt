@@ -4,6 +4,8 @@ first version:
 
 homepage
     professional headshot
+        built (x)
+        embedded in banner
     banner
     bio 
-    link to github
+    professional links
