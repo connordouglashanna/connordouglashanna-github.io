@@ -1,0 +1,9 @@
+this is a map of components for reference while I develop the app 
+
+first version:
+
+homepage
+    professional headshot
+    banner
+    bio 
+    link to github
