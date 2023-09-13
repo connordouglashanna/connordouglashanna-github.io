@@ -6,6 +6,7 @@ This page will host a general plan for the layout of the website, a list of thin
 Sitemap plan:
 
 Landing page
+features:
 	Banner
 	Bio
 	Header with nav links
