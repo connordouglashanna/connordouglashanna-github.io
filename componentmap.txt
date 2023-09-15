@@ -9,3 +9,9 @@ homepage
     banner
     bio 
     professional links
+    professional link icons
+    table of contents/navigation links
+
+projects
+    page template
+    add to ToC

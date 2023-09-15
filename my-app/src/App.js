@@ -12,14 +12,6 @@ function App() {
           This website is a professional portfolio in progress, built using React. My LinkedIn and resources for learning React are available below. 
         </p>
         <Linkset />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
