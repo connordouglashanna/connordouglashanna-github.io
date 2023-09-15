@@ -26,7 +26,9 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box>
+    <Box
+        width={["100%"]}
+    >
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
@@ -58,7 +60,7 @@ export default function WithSubnavigation() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            Logo
+            Connor Douglas Hanna
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -72,29 +74,6 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
-          <Button
-            as={"a"}
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"pink.400"}
-            href={"#"}
-            _hover={{
-              bg: "pink.300"
-            }}
-          >
-            Sign Up
-          </Button>
         </Stack>
       </Flex>
 
@@ -105,6 +84,9 @@ export default function WithSubnavigation() {
   )
 }
 
+
+///////////////////////////////////////////
+// these all need to be broken down into sub-components and commented 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200")
   const linkHoverColor = useColorModeValue("gray.800", "white")
@@ -262,7 +244,7 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Inspiration",
+    label: "Projects",
     children: [
       {
         label: "Explore Design Work",
@@ -277,7 +259,7 @@ const NAV_ITEMS = [
     ]
   },
   {
-    label: "Find Work",
+    label: "Resume",
     children: [
       {
         label: "Job Board",
@@ -292,11 +274,11 @@ const NAV_ITEMS = [
     ]
   },
   {
-    label: "Learn Design",
+    label: "Other",
     href: "#"
   },
   {
-    label: "Hire Designers",
+    label: "About",
     href: "#"
   }
 ]

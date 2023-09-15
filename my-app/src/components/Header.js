@@ -5,9 +5,6 @@ export default function Title() {
     return (
             <div>
             <WithSubnavigation />
-            <h1> 
-            Connor Douglas Hanna
-            </h1>
             </div>
     )
   }
