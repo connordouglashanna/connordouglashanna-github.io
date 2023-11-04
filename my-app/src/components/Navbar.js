@@ -26,13 +26,12 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box
-        width={["100%"]}
-    >
+    <Box>
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
+        w={'100%'}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
@@ -93,9 +92,12 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800")
 
   return (
-    <Stack direction={"row"} spacing={4}>
+    <Stack direction={"row"} spacing={4} width={["100%"]}>
       {NAV_ITEMS.map(navItem => (
-        <Box key={navItem.label}>
+        <Box 
+        key={navItem.label}
+        w='100%'
+        >
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Box
